@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CONTACTO - La chica de las actas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body class="contacto-body">
+
+    <header>
+      
+      <div class="caja">
+        <h1 class="h1-logo"><img id="logo" src="img/lachicadelasactas_logo.png "></h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main id="main-contacto">
+
+      <form>
+
+        <label for="nombreapellido">Nombre y apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" class="input-padron"required placeholder="(XX) XXXX XXXXXX">
+
+        <label for="mensaje">Deja tu consulta/mensaje acá</label>
+        <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+        <fieldset>
+
+          <legend>¿Cómo te gustaría que te contacte?</legend>
+
+          <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email </label>
+          
+
+          <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"> Teléfono</label>
+          
+
+          <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>¿En que momento del día preferís que te contacte? (Zona horaria de Argentina)</legend>
+          <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>¿Te gustaría recibir novedades de La chica de las actas?</label>
+
+        <input type="submit" value="Enviar fomulario" class="enviar">
+
+      </form>
+
+    </main>
+
+    <footer>
+      <img src="" alt="Logo de La chica de las actas">
+      <p class="copyright"><strong>&copy Copyright</strong> La chica de las actas - 2024</p>
+    </footer>
+
+  </body>
+
+</html>
